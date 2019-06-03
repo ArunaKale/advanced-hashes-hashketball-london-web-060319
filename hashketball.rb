@@ -127,3 +127,46 @@ def game_hash
 end
 
 def num_points_scored(name)
+<<<<<<< HEAD
+  player = find_the_player(name)
+  player.fetch(:points)
+=======
+  game_hash[:player]
+  puts num_points_scored("Brendan Haywood")
+>>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
+end
+
+def shoe_size(name)
+  player = find_the_player(name)
+  player.fetch(:shoe)
+end
+
+def team_colors(team_name)
+  team = find_the_team(team_name)
+  team.fetch(:colors)
+end
+
+<<<<<<< HEAD
+def team_names
+  teams.map{|t| t.fetch(:team_name)}
+end
+
+def player_numbers(team_name)
+  find_the_team(team_name)[:players].map{ |player_name, stats| stats[:number] }
+end
+
+def player_stats(player_name)
+  find_the_player(player_name)
+end
+
+def big_shoe_rebounds
+  player_biggest_shoe_size.fetch(:rebounds)
+end
+
+def teams
+  game_hash.values
+end
+
+def players
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+end
