@@ -170,3 +170,21 @@ end
 def players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
+ef find_the_team(team_name)
+  teams.find {|team| team.fetch(:team_name) == team_name}
+end
+
+def find_the_player(name)
+  players.fetch(name)
+end
+
+def player_biggest_shoe_size
+  players.max_by{|player, stats| stats.fetch(:shoe)}[1]
+=======
+def shoe_size(name)
+  player = find_the_shoe_size(name)
+  player.fetch(:shoe)
+>>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
+end
+
+
