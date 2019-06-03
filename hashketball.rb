@@ -107,11 +107,11 @@ def game_hash
               blocks: 1,
               slam_dunks: 0
             },
-<<<<<<< HEAD
+
               "Brendan Haywood" => {
-=======
+
               "Bredan Haywood" => {
->>>>>>> 113f32438f1b794b65aec172fc2815625ffccc27
+
                 number: 33,
                 shoe: 15,
                 points: 6,
